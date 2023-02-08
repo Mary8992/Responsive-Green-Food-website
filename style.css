@@ -262,6 +262,10 @@ header ul li a.active::before {
     padding: 8px;
 }
 
+.menuIcon {
+    display: none;
+}
+
 /*responsive*/
 @media (max-width: 992px) {
     .container {
@@ -301,4 +305,52 @@ header ul li a.active::before {
         padding-right: 0;
     }
 
+    /*sidebar menu*/
+    header ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        z-index: 10000;
+        /* display: initial; */
+        padding: 100px 0;
+    }
+
+    header.active ul {
+        display: initial;
+    }
+
+    header ul li {
+        padding: 20px;
+        text-align: center;
+    }
+
+    header ul li a {
+        color: #333 !important;
+        font-size: 36px;
+    }
+
+    header ul li a:hover::before,
+    header ul li a.active::before
+    {
+        width: 100%;
+    }
+
+    .menuIcon {
+        display: initial;
+        position: fixed;
+        right: 50px;
+        cursor: pointer;
+        padding: 8px;
+        z-index: 100000;
+        background: #fff url(menu.png);
+        background-size: cover;
+        width: 34px;
+        height: 34px;
+        background-repeat: no-repeat;
+        background-position: 6px;
+    }
 }
