@@ -114,6 +114,14 @@ header ul li a.active::before {
     margin-right: 50px;
 }
 
+.content .bannerText div {
+    display: none;
+}
+
+.content .bannerText div.active {
+    display: initial;
+}
+
 .content .bannerText h2 {
     font-size: 54px;
     text-transform: uppercase;
@@ -180,6 +188,11 @@ header ul li a.active::before {
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    opacity: 0;
+}
+
+.content .bannerImg img.active {
+    opacity: 1;
 }
 
 /*icons*/
