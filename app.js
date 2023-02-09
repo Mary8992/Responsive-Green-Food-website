@@ -1,12 +1,12 @@
 //slideshow Image
 let slideshow = document.getElementById("slideshow");
-let slides = slideshow.getElementsByTagName('img');
+let slides = slideshow.getElementsByTagName("img");
 let index = 0;
 
 function nextSlide() {
-    slides[index].classList.remove('active');
+    slides[index].classList.remove("active");
     index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
+    slides[index].classList.add("active");
 }
 
 function prevSlide() {
@@ -30,4 +30,10 @@ function prevSlideText() {
     slidesText[i].classList.remove("active");
     i = (i - 1 + slidesText.length) % slidesText.length;
     slidesText[i].classList.add("active");
+}
+
+//navbar menu
+function menuToggle() {
+    let nav = document.getElementById('navbar');
+    nav.classList.toggle('active')
 }

@@ -351,6 +351,15 @@ header ul li a.active::before {
         width: 34px;
         height: 34px;
         background-repeat: no-repeat;
-        background-position: 6px;
+        /* background-position: 6px; */
+    }
+
+    header.active .menuIcon {
+      background: #fff url(close.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-position: 6px; */
+      width: 34px;
+      height: 34px;
     }
 }
